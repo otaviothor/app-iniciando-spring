@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring Boot - Curso</title>
+</head>
+
+<body>
+
+  <h1>Formulário de Emprego</h1>
+  <form action="#" th:action="@{/process}" th:object="${emprego}" method="post">
+    <input type="text" th:field="*{titulo}" placeholder="Titulo">
+    <span th:if="${#fields.hasErrors('titulo')}" th:errors="*{titulo}"></span><br><br>
+
+    <input type="text" th:field="*{empresa}" placeholder="Empresa">
+    <span th:if="${#fields.hasErrors('empresa')}" th:errors="*{empresa}"></span><br><br>
+
+    <textarea th:field="*{descricao}" rows="3" placeholder="Descrição"></textarea>
+    <span th:if="${#fields.hasErrors('descricao')}" th:errors="*{descricao}"></span><br><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+</body>
+
+</html>
