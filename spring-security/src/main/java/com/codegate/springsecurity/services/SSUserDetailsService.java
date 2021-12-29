@@ -1,6 +1,7 @@
 package com.codegate.springsecurity.services;
 
 import java.util.Set;
+import javax.transaction.Transactional;
 import java.util.HashSet;
 import com.codegate.springsecurity.models.Role;
 import com.codegate.springsecurity.models.User;
@@ -10,7 +11,10 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
+@Transactional
+@Service
 public class SSUserDetailsService implements UserDetailsService {
 
   private UserRepository userRepository;
