@@ -2,7 +2,6 @@ package com.codegate.springsecurity.models;
 
 import java.util.Collection;
 import javax.persistence.*;
-
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Entity
