@@ -1,4 +1,4 @@
-<p align="center"><a href="https://spring.io/" target="_blank"><img src="./.github/logo.svg" width="400"></a></p>
+<p align="center"><img src="./.github/logo.svg" width="400"></p>
 
 ## ✨ Tecnologias
 
@@ -25,4 +25,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-Feito por [otávio silva](https://otaviothor.github.io/) 🙃
+Feito por [otávio silva](https://otaviosilva.dev/) 🙃
